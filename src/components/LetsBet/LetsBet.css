@@ -1,0 +1,55 @@
+.score_container {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_container {
+  display: flex;
+  gap: 20px;
+}
+
+.selected_team_cotainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vs_img {
+  width: 80px;
+  height: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .vs_img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.teamA,
+.teamB {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.results_container {
+  margin: 10px 0px;
+  background-color: rgb(92, 184, 92);
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.target_container {
+  margin: 10px 0px;
+  background-color: #f0ad4e;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+}

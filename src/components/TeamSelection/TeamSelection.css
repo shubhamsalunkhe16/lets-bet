@@ -1,0 +1,40 @@
+.teams_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.selected_team_cotainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vs_img {
+  width: 80px;
+  height: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .vs_img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.teamA,
+.teamB {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cross {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  width: 32px;
+}

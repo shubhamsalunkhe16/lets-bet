@@ -1,0 +1,22 @@
+.nav_container {
+  background: linear-gradient(
+    92.04deg,
+    #18184a 24.18%,
+    #19398a 50.95%,
+    #18184a 110.32%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+}
+
+.ipl_logo {
+  width: 80px;
+  cursor: pointer;
+}
+.header_title {
+  font-size: 16px;
+  color: #fff;
+}

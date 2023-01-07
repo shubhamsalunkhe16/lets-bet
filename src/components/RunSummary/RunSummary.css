@@ -1,0 +1,14 @@
+.run_summary_container {
+  display: flex;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.ballData {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
