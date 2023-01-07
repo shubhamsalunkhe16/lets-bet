@@ -128,7 +128,7 @@ const useScoreGenerator = (isRematch) => {
         );
         clearInterval(interval);
       }
-    }, 20);
+    }, 2000);
 
     return () => {
       clearInterval(interval);
