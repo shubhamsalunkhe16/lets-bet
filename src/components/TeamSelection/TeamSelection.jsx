@@ -52,16 +52,15 @@ const TeamSelection = () => {
           )}
         </div>
       </div>
-      {selectedTeamA.abbr && selectedTeamB.abbr ? (
-        <button
-          className="btn largeBtn"
-          onClick={() => {
-            setIsTeamsSelected(true);
-          }}
-        >
-          Let's Bet !
-        </button>
-      ) : null}
+      <button
+        className="btn largeBtn"
+        disabled={!(!!selectedTeamA.abbr && !!selectedTeamB.abbr)}
+        onClick={() => {
+          setIsTeamsSelected(true);
+        }}
+      >
+        Let's Bet !
+      </button>
       <hr style={{ margin: "15px 0px" }} />
       <div className="teams_container">
         {TeamDataArr.map((team) => (

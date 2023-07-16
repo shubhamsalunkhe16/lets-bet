@@ -21,9 +21,37 @@ ChartJS.register(
   Legend
 );
 
+// export const options = {
+//   responsive: true,
+//   plugins: {},
+// };
+
 export const options = {
   responsive: true,
-  plugins: {},
+  layout: {
+    padding: 15,
+  },
+  plugins: {
+    datalabels: {
+      color: "#000",
+      align: "end",
+      anchor: "end",
+      font: {
+        weight: "bold",
+        size: 12,
+      },
+      offset: 0,
+    },
+  },
+  legend: {
+    display: false,
+  },
+  scales: {
+    y: {
+      max: 6,
+      min: 0,
+    },
+  },
 };
 
 const labels = ["0.1", "0.2", "0.3", "0.4", "0.5", "1.0"];

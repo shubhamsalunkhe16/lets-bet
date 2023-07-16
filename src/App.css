@@ -21,4 +21,19 @@
   display: block;
   margin: 10px auto;
   border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:disabled,
+button[disabled] {
+  background: #ccc;
+  /* border: 1px solid #999999; */
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.score_container .team_card {
+  cursor: auto !important;
 }

@@ -6,8 +6,8 @@ const Footer = () => {
     <div className="footer_container">
       <h3 className="footer_title">HOW TO PLAY ?</h3>
       <p className="footer_content">
-        Do you believe in luck? Let's try it. Select your team and look forward
-        to the results...Hope your team do well. Good Luck!!!
+        Do you believe in luck? Choose a team and wait for the results... I hope
+        your team does well. I wish you good luck!
       </p>
     </div>
   );

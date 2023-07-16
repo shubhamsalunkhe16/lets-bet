@@ -8,49 +8,83 @@
   min-height: calc(100vh - 158px);
 }
 
-.button_container {
+.score_container .button_container {
   display: flex;
   gap: 20px;
 }
 
-.selected_team_cotainer {
+.score_container .selected_team_cotainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
+  margin-top: 10px;
 }
 
-.vs_img {
-  width: 80px;
-  height: 80px;
+.score_container .vs_img {
+  width: 35px !important;
+  height: 35px !important;
+}
+.score_container .team_logo_header {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
 }
 
-@media only screen and (max-width: 768px) {
-  .vs_img {
-    width: 50px;
-    height: 50px;
-  }
-}
-
-.teamA,
-.teamB {
+.score_container .teamA,
+.score_container .teamB {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.results_container {
-  margin: 10px 0px;
-  background-color: rgb(92, 184, 92);
-  padding: 10px 15px;
-  border-radius: 5px;
+.score_container .results_container {
+  width: 100%;
+  max-width: 600px;
+  padding: 50px 75px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/src/assets/images/firework.gif);
+  color: #fff;
+  margin: 20px auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 75%;
+}
+
+.score_container .results_text {
+  font-size: 20px;
   text-align: center;
 }
 
-.target_container {
-  margin: 10px 0px;
-  background-color: #f0ad4e;
-  padding: 10px 15px;
-  border-radius: 5px;
+.score_container .target_container {
+  width: 100%;
+  max-width: 600px;
+  padding: 22px 75px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* url("../../assets/images/scoreboard.jpg"); */
+      url("../../assets/images/result-bg-image.jpg");
+  color: #fff;
+  background-position: 45% 90%;
+  margin: 20px auto;
+}
+
+.score_container .target_text {
+  font-size: 24px;
+  text-align: center;
+  margin: 0px auto 10px;
+}
+.score_container .target_update_text {
+  font-size: 20px;
   text-align: center;
 }

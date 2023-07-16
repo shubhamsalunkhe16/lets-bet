@@ -29,16 +29,21 @@ export default function LetsBet() {
     <>
       <Navbar headerText={`${selectedTeamA.abbr} VS ${selectedTeamB.abbr}`} />
       <div className="score_container">
-        <div
-          className="selected_team_cotainer"
-          style={{ transform: "scale(0.7)", margin: "-35px -35px -25px" }}
-        >
+        <div className="selected_team_cotainer">
           <div className="teamA">
-            <TeamCard team={selectedTeamA} />
+            <img
+              src={selectedTeamA.logo}
+              alt={selectedTeamA.abbr}
+              className="team_logo_header"
+            />
           </div>
           <img src={VS} alt="VS" className="vs_img" />
           <div className="teamB">
-            <TeamCard team={selectedTeamB} />
+            <img
+              src={selectedTeamB.logo}
+              alt={selectedTeamB.abbr}
+              className="team_logo_header"
+            />
           </div>
         </div>
         <div style={{ width: "100%", maxWidth: "500px" }}>
@@ -87,7 +92,9 @@ export default function LetsBet() {
         </div>
         {result ? (
           <>
-            <h3 className="results_container">{result}</h3>
+            <div className="results_container">
+              <h3 className="results_text">{result}</h3>
+            </div>
             <div className="button_container">
               <button
                 className="btn largeBtn"
@@ -109,17 +116,17 @@ export default function LetsBet() {
             </div>
           </>
         ) : (
-          <span style={{ textAlign: "center" }}>
+          <>
             {TeamARunsSummary.length === 6 && (
-              <>
-                <h3 className="target_container">Target : {TeamARuns + 1}</h3>
-                <h3>
+              <div className="target_container">
+                <h2 className="target_text">Target : {TeamARuns + 1}</h2>
+                <h3 className="target_update_text">
                   {selectedTeamB.abbr} need {TeamARuns + 1 - TeamBRuns} to win
                   off {6 - TeamBRunsSummary.length} balls
                 </h3>
-              </>
+              </div>
             )}
-          </span>
+          </>
         )}
       </div>
       <Footer />

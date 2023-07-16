@@ -10,20 +10,20 @@
   align-items: center;
 }
 
-.vs_img {
+.selected_team_cotainer .vs_img {
   width: 80px;
   height: 80px;
 }
 
 @media only screen and (max-width: 768px) {
-  .vs_img {
+  .selected_team_cotainer .vs_img {
     width: 50px;
     height: 50px;
   }
 }
 
-.teamA,
-.teamB {
+.selected_team_cotainer .teamA,
+.selected_team_cotainer .teamB {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +31,7 @@
   position: relative;
 }
 
-.cross {
+.selected_team_cotainer .cross {
   position: absolute;
   top: 0px;
   right: 0px;
