@@ -21,11 +21,6 @@ ChartJS.register(
   Legend
 );
 
-// export const options = {
-//   responsive: true,
-//   plugins: {},
-// };
-
 export const options = {
   responsive: true,
   layout: {
@@ -48,7 +43,7 @@ export const options = {
   },
   scales: {
     y: {
-      max: 6,
+      max: 8,
       min: 0,
     },
   },
